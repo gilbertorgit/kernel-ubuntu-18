@@ -26,8 +26,8 @@ Swap:             0           0           0
 ```
 apt-get -y install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc gnupg2
 apt-get -y --no-install-recommends install kernel-package
-sudo apt-get install bison
-sudo apt-get install flex
+sudo apt-get -y install bison flex
+
 ```
 
 
