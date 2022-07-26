@@ -107,12 +107,17 @@ patch -p1 < uksm-4.20.patch
 ```
 change .config 
 
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+
+----------------------------------------------------------
 vi .config
 
 from 
 CONFIG_SYSTEM_TRUSTED_KEYS="debian/canonical-certs.pem" 
 to
 CONFIG_SYSTEM_TRUSTED_KEYS=""
+----------------------------------------------------------
 ```
 
 
