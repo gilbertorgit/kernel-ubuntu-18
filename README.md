@@ -138,6 +138,8 @@ Enable KSM for page merging (KSM) [Y/n/?] y
 
 ```
 make -j14 deb-pkg LOCALVERSION=-uksm
+or
+make -j$(nproc) deb-pkg LOCALVERSION=-uksm
 
 # You should see something like that 
 
